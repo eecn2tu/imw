@@ -1,0 +1,72 @@
+.css_content{
+    min-height: 500px;
+    width: 780px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.css_content_userTable_title{
+    margin: auto;
+    padding-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #969696;
+}
+
+.css_content_userTable_title_name{
+    float: left;
+}
+
+.css_content_discountCoupons_item{
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.css_content_discountCoupons{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.css_content_start_time{
+    width: 200px;
+    height: 25px;
+    line-height: 30px;
+    float: left;
+    color: #ffffff;
+    background-color: #C72322;
+}
+.css_content_start_time_input{
+    width: 200px;
+    height: 23px;
+    margin-left: 200px;
+    padding-top: 2px;
+    background-color: #C72322;
+}
+
+.css_content_end_time{
+    width: 200px;
+    height: 25px;
+    line-height: 30px;
+    float: left;
+    color: #ffffff;
+    background-color: #C72322;
+}
+
+.css_content_end_time_input{
+    width: 200px;
+    height: 23px;
+    padding-top: 2px;
+    float: left;
+    background-color: #C72322;
+}
+
+.css_content_button{
+    background-color: #C72322;
+    color: #ffffff;
+    width: 400px;
+    height: 25px;
+    margin-top: 5px;
+}

@@ -1,0 +1,25 @@
+.css_content_table_remove_left{
+    border-left: none;
+}
+
+.css_content_table_remove_right{
+    border-right: none;
+}
+
+.css_content_table_remove_bottom{
+    border-bottom: none;
+}
+
+.css_content_table_remove_top{
+    border-top: none;
+}
+
+table{
+    border-collapse: collapse;
+    border: none;
+    margin-top: 10px;
+}
+
+table tr td{
+    border: solid #ADADAD 1px;
+}

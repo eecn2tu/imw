@@ -1,0 +1,93 @@
+body{
+    text-align: center;
+    background-color: #373737;
+}
+
+.css_main{
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.css_top{
+    width: 1000px;
+    height: 60px;
+    margin: auto;
+}
+
+.css_top_left{
+    text-align: center;
+    line-height:30px;
+    color: #EAEAE8;
+    margin-left: 0px;
+    width: 200px;
+    height: 100%;
+    background-color: #C72322;
+    float: left;
+}
+
+.css_top_right{
+    line-height:30px;
+    color: #EAEAE8;
+    margin-right: 0px;
+    width: 160px;
+    height: 100%;
+    float: right;
+}
+
+.css_body{
+    width:  1000px;
+    height: auto;
+    background-color: #FFFFFF;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+.css_navigation{
+    height: inherit;
+    float: left;
+    background-color: #FFFFFF;
+}
+
+.css_navigationItem{
+    width: 200px;
+    border-bottom: solid;
+    border-bottom-color: #F0F0F0;
+    padding-bottom: 10px;
+}
+
+.css_navigationItem ul{
+    margin: auto;
+    padding-left: 20px;
+    padding-top: 15px;
+    text-align: left;
+}
+
+.css_navigationItem li{
+    margin: auto;
+    padding-left: 35px;
+    padding-top: 10px;
+    text-align: left;
+    list-style-type:none;
+}
+
+.css_active{
+    color: #C72322;
+    font-weight: bold;
+}
+
+.css_inActive{
+    color: transparent;
+}
+
+.css_navigationItem a{
+    text-decoration:none;
+}
+
+.css_content{
+    width: 800px;
+    height: inherit;
+    margin-left: 200px;
+    background-color:#F0F0F0 ;
+}

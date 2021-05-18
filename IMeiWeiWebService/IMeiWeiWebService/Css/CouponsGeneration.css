@@ -1,0 +1,125 @@
+.css_content{
+    min-height: 500px;
+    width: 780px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.css_content_userTable_title{
+    margin: auto;
+    padding-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #969696;
+}
+
+.css_content_userTable_title_name{
+    text-align: left;
+}
+
+.css_content_couponsGeneration{
+    width: 370px;
+    border-right-color: #ADADAD;
+    text-align: left;
+    float: left;
+    padding-left: 10px;
+    padding-right:10px;
+    padding-top: 10px;
+}
+
+.css_content_couponsGeneration img{
+    float: left;
+}
+
+.css_name{
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    float: left;
+    margin-left: 30px;
+    color: #ffffff;
+}
+
+.css_content_couponsGeneration input[type="text"]{
+    height: 25px;
+    width: 220px;
+    text-align: center;
+    border: none;
+    margin-left: 5px;
+}
+
+.css_content_coupons{
+    height: 35px;
+    line-height: 35px;
+    margin-top: 10px;
+    background-color: #D72020;
+}
+
+.css_content_coupons_amount{
+    height: 35px;
+    line-height: 35px;
+    margin-top: 10px;
+    background-color: #D72020;
+}
+
+.css_content_coupons_time{
+    height: 35px;
+    margin-top: 10px;
+    line-height: 35px;
+    background-color: #D72020;
+}
+
+.css_content_coupons img{
+    margin-left: 5px;
+    margin-top: 4px;
+}
+
+.css_content_coupons_amount img{
+    margin-left: 5px;
+    margin-top: 4px;
+}
+
+.css_content_coupons_time img{
+    margin-left: 5px;
+    margin-top: 4px;
+}
+
+.CouponsStringOfCode{
+    margin-left: 10px;
+}
+
+#contentTable thead{
+    height: 25px;
+    background-color: #C72322;
+    color: #ffffff;
+}
+
+.css_button_genarate{
+    width:179px;
+    height: 35px;
+    color: #ffffff;
+    background-color: #C72322;
+}
+
+.css_button_reInput{
+    width:179px;
+    height: 35px;
+    color: #ffffff;
+    background-color: #ADADAD;
+}
+
+#contentTable td{
+    height: 25px;
+    width: 190px;
+}
+
+#pageTable td{
+    height: 25px;
+    width: 190px;
+}
+
+.css_content_button_groups{
+    margin-top: 20px;
+    text-align: center;
+}

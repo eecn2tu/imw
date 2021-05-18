@@ -1,0 +1,74 @@
+.css_content{
+    min-height: 500px;
+    width: 780px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.css_content_userTable_title{
+    margin: auto;
+    padding-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #969696;
+}
+
+.css_content_userTable_title_name{
+    float: left;
+}
+
+.css_content_li{
+    margin-top: 20px;
+    height: 120px;
+}
+
+.css_content_li li{
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+    width: 155px;
+    margin-left: 5px;
+    list-style-type:none;
+    background-color: #F0F0F0;
+    background-repeat: no-repeat;
+    float: left;
+    border: 1px solid #C8C8C8;
+    position:relative;
+}
+
+li img{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.css_button{
+    width: 100px;
+    height: 30px;
+    color: #ffffff;
+}
+
+.css_button_add{
+    background-color: #C72322;
+}
+
+.css_button_reInput{
+    background-color: #ADADAD;
+}
+
+.css_button_delete{
+    background-color: #373737;
+}
+
+table tr td{
+    height: 35px;
+    text-align: left;
+    border-bottom:  1px solid #C8C8C8;
+}
+
+table tr td input[type="text"]{
+    width: 400px;
+    background-color: transparent;
+    border: none;
+}

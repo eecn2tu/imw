@@ -1,0 +1,133 @@
+.css_content{
+    min-height: 500px;
+    width: 780px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.css_content_userTable{
+    background-color: #ffffff;
+    padding-bottom: 15px;
+}
+
+.css_content_userTable_title{
+    margin: auto;
+    padding-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #969696;
+}
+
+.css_content_userTable_title_name{
+    float: left;
+}
+
+.css_content_userTable_subTitle{
+    margin: auto;
+    padding-left: 40px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #C72322;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.css_content_userTable ul{
+    background-color: #FFFFFF;
+    height:82px;
+}
+
+.css_content_userTable ul li{
+    width: 149.6px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    float: left;
+    height: 50px;
+}
+
+.css_content_userTable ul li div{
+    margin-top: 15px;
+}
+
+.css_content_userTable ul li span{
+   text-align: center;
+}
+
+.css_content_userTable ul li a{
+    margin-left: 15px;
+}
+
+.css_content_userTable_search{
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+
+.css_content_userTable_search_content{
+    background-color: #C72322;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.css_content_userTable_search_button{
+    height: 35px;
+    line-height: 35px;
+}
+
+.css_content_userTable_search_button input{
+    height: 35px;
+    line-height: 35px;
+    width: 80px;
+    float: right;
+    margin-right: 10px;
+    background-color: #C72322;
+    color: #FFFFFF;
+}
+
+.css_input_text{
+    height: 26px;
+    color: #FFFFFF;
+}
+
+.css_input_button{
+    background-color: #C72322;
+    border: none;
+    height: 33px;
+    width: 55px;
+    margin-left: 3px;
+    color: #FFFFFF;
+}
+
+.css_content_userTable ul{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.css_content_ul{
+    margin-top: 10px;
+}
+
+.css_content_ul_li{
+    border-color: #ADADAD;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.css_li_border_left{
+    border-left: none;
+}
+
+.css_li_border_right{
+    border-right: none;
+}
+
+.css_li_border_top{
+    border-top: none;
+}
+
+.css_li_border_bottom{
+    border-bottom: none;
+}
+
