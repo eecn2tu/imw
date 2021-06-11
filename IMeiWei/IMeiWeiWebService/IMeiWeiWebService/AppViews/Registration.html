@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../Css/Registration.css" type="text/css">
+</head>
+<body>
+<div class="css_main">
+    <div class="css_header">
+        <img style="float: left;margin-top: 10px" src="../Img/Img_LeftArrow.png"/>
+        <span>会 员 登 录 & 注 册</span>
+    </div>
+    <div class="css_picture">
+        <img src="../Img/Img_Logo.png" />
+    </div>
+    <div class="css_content">
+        <div class="css_content_item">
+            <input id="phoneNumber" class="css_phone" type="text" placeholder="手机" />
+        </div>
+        <div class="css_content_item">
+            <input id="password" class="css_password" type="text" placeholder="密码" />
+        </div>
+        <div class="css_content_item" style="background-color: #3C3C3C">
+            <input id="securityCode" class="css_scurityCode" type="text" placeholder="短信验证码" />
+            <img src="../Img/Img_Message.png" />
+        </div>
+        <div class="css_content_item">
+            <input id="userName" class="css_realName" type="text" placeholder="真实姓名" />
+        </div>
+        <div class="css_content_item">
+            <button id="Js_Registration" type="button" >提交注册</button>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../JSLibrary/jquery-1.8.3.min.js"></script>
+<script>
+    $(function(){
+        $("#Js_Registration").click(function () {
+            var phoneNumber = $("#phoneNumber").val();
+            var password = $("#password").val();
+            var securityCode = $("#securityCode").val();
+            var userName = $("#userName").val();
+
+            $.ajax({
+                type: "POST", //访问WebService使用Post方式请求
+                contentType: "application/json;charset=utf-8", //WebService 会返回Json类型
+                url: "../WebService1.asmx/Registration", //调用WebService
+                data: "{phoneNumber:'" + phoneNumber + "',password:'" + password + "',securityNumber:'" + securityCode + "',userName:'" + userName + "'}", //Email参数
+                dataType: 'json',
+
+                error: function (x, e) {
+                    alert("error");
+                },
+                success: function (response) { //回调函数，result，返回值
+                    alert(response.d);
+                }
+            })
+    });
+    })
+
+</script>
+</body>
+
+</html>

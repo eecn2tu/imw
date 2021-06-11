@@ -1,0 +1,95 @@
+.css_content{
+    min-height: 500px;
+    width: 780px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.css_content_userTable_title{
+    margin: auto;
+    padding-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #969696;
+}
+
+.css_content_userTable_title_name{
+    float: left;
+}
+
+.css_content_pictures{
+    margin-top: 10px;
+    min-height: 180px;
+    width: 780px;
+    margin-right: 10px;
+    background-color: #FFFFFF;
+}
+
+.css_content_pictures_name{
+    background-color: #969696;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.css_content_pictures_discription{
+    text-align: left;
+    font-size: large;
+    margin-left: 10px;
+    color: #D52122;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.css_content_pictures_group{
+    min-height: 200px;
+}
+
+.css_content_pictures_group li{
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+    width: 148px;
+    margin-left: 5px;
+    list-style-type:none;
+    background-color: #F0F0F0;
+    background-repeat: no-repeat;
+    float: left;
+    border: 1px solid #C8C8C8;
+    position:relative;
+}
+
+.css_content_pictures_group li img{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+table tbody tr{
+    height: 35px;
+    line-height:35px;;
+}
+
+table tbody tr td{
+    width: 200px;
+    text-align: left;
+    border-bottom: 1px solid #C8C8C8;
+
+}
+.css_button_contain{
+    position:relative;
+}
+
+.css_button_confirm{
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #C72322;
+    color: #ffffff;
+}

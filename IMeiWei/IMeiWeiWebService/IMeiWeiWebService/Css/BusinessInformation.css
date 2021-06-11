@@ -1,0 +1,65 @@
+.css_content{
+    min-height: 500px;
+    width: 780px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.css_content_userTable_title{
+    margin: auto;
+    padding-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #969696;
+}
+
+.css_content_userTable_title_name{
+    float: left;
+}
+
+.css_content_userTable_title_operations{
+    float: right;
+}
+
+.css_pageUp{
+    float: left;
+}
+
+.css_pages{
+    float: left;
+}
+
+.css_pageDown{
+    float: left;
+}
+
+.css_content_userTable ul{
+    height: 35px;
+}
+
+.css_content_userTable ul div{
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    width: 390px;
+}
+
+.css_content_userTable li{
+    height: 45px;
+    width: 780px;
+}
+
+.css_content_userTable li img{
+    float: left;
+    margin-left: 10px;
+}
+.css_userId{
+    float: left;
+    margin-left: 130px;
+}
+
+.css_userName{
+    float: left;
+    margin-left: 300px;
+}

@@ -1,0 +1,40 @@
+.css_content{
+    min-height: 500px;
+    width: 780px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.css_content_userTable_title{
+    margin: auto;
+    padding-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #969696;
+}
+
+.css_content_userTable_title_name{
+    float: left;
+}
+
+.css_content_userTable ul{
+    background-color: #FFFFFF;
+    height: 35px;
+    line-height: 35px;
+}
+
+.css_content_userTable ul li{
+    width: 390px;
+    float: left;
+}
+
+.css_content_userTable ul li span{
+    float: left;
+    margin-left: 140px;
+}
+
+.css_content_userTable ul li a{
+    margin-left: 15px;
+}
+

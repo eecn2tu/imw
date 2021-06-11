@@ -1,0 +1,64 @@
+.css_content{
+    min-height: 500px;
+    width: 780px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.css_content_userTable_title{
+    margin: auto;
+    padding-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #969696;
+}
+
+.css_content_userTable_title_name{
+    text-align: left;
+}
+
+.css_content_userTable ul div{
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    width: 190px;
+}
+
+.css_content_userTable li{
+    height: 45px;
+    width: 780px;
+}
+
+table thead{
+    color: #C72322;
+}
+
+table thead td{
+    width: 195px;
+
+}
+table tr{
+    height: 35px;
+    line-height: 35px;
+}
+
+table tr td{
+    text-align: center;
+}
+
+.css_button_groups input{
+    margin-right: 10px;
+    width: 120px;
+    height: 30px;
+}
+
+.button_cancel{
+    background-color: #969696;
+    float: right;
+}
+
+.button_confirm{
+    background-color: #D72120;
+    float: right;
+}

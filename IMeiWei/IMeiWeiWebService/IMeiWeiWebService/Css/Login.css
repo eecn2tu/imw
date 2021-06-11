@@ -1,0 +1,61 @@
+body{
+    background-color: #373737;
+    text-align: center;
+}
+
+.css_Main{
+    margin-top: 180px;
+    background-color: #373737;
+}
+
+.css_div_title{
+    color:#EAEAEA;
+}
+
+.css_div_actionName{
+    color:#EAEAEA;
+}
+
+.css_div_actionName{
+    margin-top: 30px;
+}
+
+.css_div_userName{
+    margin-top: 30px;
+}
+
+.css_text_userName{
+    width: 240px;
+    height: 24px;
+    background-color: #919191;
+    border-color: #919191;
+    background-image: url("../Img/Img_UserName.png");
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.css_text_password{
+    width: 240px;
+    height: 24px;
+    background-color: #919191;
+    border-color: #919191;
+    background-image: url("../Img/Img_Password.png");
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.css_div_password{
+    margin-top: 10px;
+}
+
+.css_button_login{
+    width: 244px;
+    background-color: #C72322;
+    color:#EAEAE8;
+    border-color: #C72322;
+    height: 28px;
+}
+
+.css_div_login{
+    margin-top: 10px;
+}

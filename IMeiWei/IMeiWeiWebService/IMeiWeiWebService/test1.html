@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+    <div>
+        <div><img src="" /> <input id="username" type="text" placeholder="手机" value="12345678" /></div>
+        <div><img src="" /> <input type="text" placeholder="密码" /></div>
+        <div><img src="" /> <input type="text" placeholder="短信验证码" /></div>
+        <div><img src="" /> <input type="text" placeholder="真实姓名" /></div>
+        <div><img src="" /> <button id="Js_Registration" type="button">提交注册</button></div>
+    </div>
+    <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+    <script>
+        $(function () {
+            $("#Js_Registration").click(function () {
+                //$.ajax({
+                //    type: "POST",   //访问WebService使用Post方式请求
+                //    contentType: "application/json", //WebService 会返回Json类型
+                //    url: "WebService1.asmx/HelloWorld", //调用WebService的地址和方法名称组合 ---- WsURL/方法名
+                //    data: "{}",         //这里是要传递的参数，格式为 data: "{paraName:paraValue}",下面将会看到
+                //    dataType: 'json',
+                //    success: function (result) {     //回调函数，result，返回值
+                //        $('#dictionary').append(result.d);
+                //    }, error: function (x, e) {
+                //        alert("error");
+                //    }
+                //})
+                $.ajax({
+                    type: "POST", //访问WebService使用Post方式请求
+                    contentType: "application/json;charset=utf-8", //WebService 会返回Json类型
+                    url: "WebService1.asmx/Registration", //调用WebService
+                    data: "{phoneNumber:'18817702889',password:'admin',securityNumber:'2312'}", //Email参数
+                    dataType: 'json',
+
+                    error: function (x, e) {
+                        alert("error");
+                    },
+                    success: function (response) { //回调函数，result，返回值
+                        alert(response);
+                    }
+                })
+            });
+        })
+
+    </script>
+</body>
+
+</html>
