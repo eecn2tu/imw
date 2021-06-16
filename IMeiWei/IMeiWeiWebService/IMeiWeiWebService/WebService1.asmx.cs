@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
+using System.Text;
 using System.Web;
+using System.Web.Script.Serialization;
 using System.Web.Script.Services;
 using System.Web.Services;
 
@@ -106,16 +109,90 @@ namespace IMeiWeiWebService
             return "SUCCESS";
         }
 
+
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public string CreateImgs()
+        public void GetBusiness()
         {
-            var request = HttpContext.Current.Request;
-            var imageData = request["data"];
+            var js = GenJSSerializer();
+            IMeiWei.BLL.business bll_business = new IMeiWei.BLL.business();
+            var test = bll_business.DataTableToList(bll_business.GetAllList().Tables[0]);
+            var msg = DataTableToJson(bll_business.GetAllList().Tables[0]);
+            Context.Response.Write(js.Serialize(msg));
+        }
+
+        /// <summary>
+        /// 根据DataTable生成Json
+        /// </summary>
+        /// <param name='table'> datatable</param>
+        /// <returns> json</returns>
+        public string DataTableToJson(DataTable table)
+        {
+            if (table == null || table.Rows.Count == 0)
+            {
+                return string.Empty;
+            }
+
+            var sb = new StringBuilder();
+            sb.Append('[');
+
+            string[] columnName = new string[table.Columns.Count];//列名数组
+            for (int i = 0; i < table.Columns.Count; i++)
+            {
+                columnName[i] = table.Columns[i].ColumnName.ToLower();//列名小写
+            }
+            //拼接列
+            for (int i = 0; i < table.Rows.Count; i++)
+            {
+                sb.Append('{');
+                for (int j = 0; j < columnName.Length; j++)
+                {
+                    sb.Append('"' + columnName[j] + '"' + ":" + '"' + table.Rows[i][j].ToString() + '"');
+                    if (j < columnName.Length - 1)
+                    {
+                        sb.Append(',');
+                    }
+                }
+                sb.Append('}');
+                if (i < table.Rows.Count - 1)
+                {
+                    sb.Append(',');
+                }
+            }
+            sb.Append(']');
+
+            table = null;
+            return sb.ToString();
+        }
+
+        /// <summary>
+        /// 构造Json  序列化
+        /// </summary>
+        /// <returns></returns>
+        public JavaScriptSerializer GenJSSerializer()
+        {
+            JavaScriptSerializer js = new JavaScriptSerializer();
+            Context.Response.Clear();
+            Context.Response.ContentType = "application/json";
+            return js;
+        }
 
 
-            return null;
+        /// <summary>
+        /// 获取用户信息
+        /// </summary>
+
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public void GetUserInfo()
+        {
+            var js = GenJSSerializer();
+            IMeiWei.BLL.user bll_user = new IMeiWei.BLL.user();
+            var msg = DataTableToJson(bll_user.GetAllList().Tables[0]);
+            Context.Response.Write(js.Serialize(msg));
         }
 
     }
+
 }
+
